@@ -8,7 +8,7 @@ Pour installer le projet, suivez ces étapes :
 
 1. Clonez le dépôt :
     ```bash
-    git clone https://github.com/votre-utilisateur/DailyNews.git
+    git clone https://github.com/MateoMBR/VueJS.git
     ```
 2. Accédez au répertoire du projet :
     ```bash
