@@ -1,29 +1,35 @@
-# vue-project
+# DailyNews 📅📰
 
-This template should help get you started developing with Vue 3 in Vite.
+Bienvenue dans le projet **DailyNews** ! Ce projet vous permet de rester à jour avec les dernières nouvelles.
 
-## Recommended IDE Setup
+## Installation 🚀
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+Pour installer le projet, suivez ces étapes :
 
-## Customize configuration
+1. Clonez le dépôt :
+    ```bash
+    git clone https://github.com/votre-utilisateur/DailyNews.git
+    ```
+2. Accédez au répertoire du projet :
+    ```bash
+    cd DailyNews
+    ```
+3. Installez les dépendances :
+    ```bash
+    npm install
+    ```
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+## Utilisation 🛠️
 
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
+Pour lancer le projet en mode développement, utilisez la commande suivante :
+```bash
 npm run dev
 ```
 
-### Compile and Minify for Production
+Le projet sera accessible à l'adresse [http://localhost:3000](http://localhost:3000).
 
-```sh
-npm run build
-```
+## Licence 📄
+
+Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de détails.
+
+Merci d'utiliser **DailyNews** ! 🎉

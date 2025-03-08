@@ -1,24 +1,45 @@
-import { createRouter, createWebHistory } from 'vue-router';
-import FeedForm from '../components/FeedForm.vue';
-import FeedList from '../components/FeedList.vue';
-import NewsList from '../components/NewsList.vue';
-import NewsDetail from '../components/NewsDetail.vue';
-import Preferences from '../components/Preferences.vue';
-import NotFound from '../components/NotFound.vue';
-
-const routes = [
-  { path: '/', component: FeedList },
-  { path: '/add-feed', component: FeedForm },
-  { path: '/edit-feed/:id', component: FeedForm, props: true },
-  { path: '/news/:id', component: NewsList, props: true },
-  { path: '/news/:feedId/:newsId', component: NewsDetail, props: true },
-  { path: '/preferences', component: Preferences },
-  { path: '/:pathMatch(.*)*', component: NotFound }
-];
+import { createRouter, createWebHistory } from 'vue-router'
+import FeedList from '@/views/FeedList.vue'
+import AddFeed from '@/views/AddFeed.vue'
+import ShowFeed from '@/views/ShowFeed.vue'
+import EditFeed from '@/views/EditFeed.vue'
+import Preferences from '@/views/Preferences.vue'
+import NotFound from '@/views/NotFound.vue'
 
 const router = createRouter({
-  history: createWebHistory(),
-  routes
-});
+  history: createWebHistory(import.meta.env.BASE_URL),
+  routes: [
+    {
+      path: '/',
+      name: 'home',
+      component: FeedList,
+    },
+    {
+      path: '/addfeed',
+      name: 'addFeed',
+      component: AddFeed,
+    },
+    {
+      path: '/feed/:id',
+      name: 'showFeed',
+      component: ShowFeed,
+    },
+    {
+      path: '/editfeed/:id',
+      name: 'editFeed',
+      component: EditFeed,
+    },
+    {
+      path: '/preferences',
+      name: 'preferences',
+      component: Preferences,
+    },
+    {
+      path: '/notfound',
+      name: 'notFound',
+      component: NotFound,
+    }
+  ],
+})
 
-export default router;
+export default router
